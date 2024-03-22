@@ -15,14 +15,19 @@
           rgba(14, 173, 177, 1) 100%
         );
         background-repeat: no-repeat;
-        height: 100vh;
+        min-height: 100vh;
         margin: 0;
         padding: 0;
         color: #fefefe;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       form {
         display: grid;
-        width: 600px;
+        /*width: 600px;*/
+        min-width: 650px;
+        max-width: 1500px;
         grid-template-columns: 1fr 1fr;
         font-size: 1.2rem;
         gap: 20px;
@@ -30,12 +35,29 @@
       }
       form > h2 {
         grid-column: span 2;
+        text-shadow: var(--text-shadow);
+        border-bottom: 2px solid #8c8c8c;
+        padding-bottom: 20px;
+        margin-bottom: 0;
       }
       form > p {
         grid-column: span 2;
+        margin: 5px 15px;
+        font-style: italic;
       }
       form > input[type="submit"] {
         grid-column: span 2;
+        padding: 10px;
+        font-size: 1.2em;
+        font-weight: 600;
+        border-radius: 10px;
+        color: white;
+        background: linear-gradient(
+          to right,
+          rgb(172, 6, 108) 0%,
+          rgba(95, 4, 95) 100%
+        );
+        text-shadow: var(--text-shadow);
       }
       form > .formgroup {
         display: flex;
@@ -54,15 +76,17 @@
       }
       .radiogroup {
         grid-column: span 2;
+        text-shadow: var(--text-shadow);
       }
       .radiogroup > #gender-title {
         font-size: 1.3em;
         margin-bottom: 15px;
+        text-shadow: var(--text-shadow);
       }
       .radiogroup > label {
         margin-right: 20px;
         font-size: 1.1em;
-        text-shadow: 1px;
+        text-shadow: var(--text-shadow);
       }
     </style>
   </head>
@@ -133,7 +157,7 @@
         <label for="other">Other</label>
       </div>
       <p>
-        By clcking Sign Up, you agree to our Terms, Privacy Policy and Cookies
+        By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies
         Policy. You may receive SMS notifications from us and can opt out at any
         time.
       </p>
