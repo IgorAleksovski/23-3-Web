@@ -3,96 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage😃</title>
-    <style>
-      li {
-        display: inline;
-      }
-    </style>
+    <title>Startpage</title>
+    <link rel="stylesheet" href="./fontfaces.css" />
+    <link rel="stylesheet" href="./startpage.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/article.html">Page 1</a></li>
-        <li><a href="/ling 2">Page 2</a></li>
-        <li><a href="/ling3">Page 3</a></li>
-      </ul>
-    </nav>
-
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
-
-    <p>
-      Hier könte <strong>Ihre Werbung </strong>stehen! <i>Das sollte</i> in der
-      4. Zeile <b> stehen!</b>
-    </p>
-    <p>
-      Lorem, <em>ipsum dolor</em> sit amet consectetur adipisicing elit. Id vero
-      eligendi <br /><br />
-      necessitatibus maiores incidunt quasi optio nostrum, maxime ab ipsum?
-    </p>
-
-    <p>x = y<sup>2</sup></p>
-
-    <p>x = y <sub>a</sub></p>
-    <p>Heute ist ein <ins>schöner</ins> Tag</p>
-    <p>Heute ist ein <mark> schöner</mark> Tag</p>
-
-    <!-- ul => Unorderer List-->
-    <!--Li = List-item-->
-
-    <ul>
-      <li>Punkt <small> A</small></li>
-
-      <li>Punkt B</li>
-      <li>Punkt C</li>
-      <!-- ol =>Orderer List-->
-
-      <ol>
-        <li>Punkt 1</li>
-        <li><p>Oma</p></li>
-
-        <li>Punkt 2</li>
-        <li>Punkt 3</li>
-      </ol>
-
-      <!--Image tags-->
-
-      <img src="https://picsum.photos/seed/snickers/200/300" alt="Mein Foto" />
-      <img src="https://picsum.photos/200/200" alt="Mein Foto" />
-
-      <!--Table-->
-
-      <table>
-        <!--th -table -head-->
-        <thead>
-          <!--tr -table -row-->
-          <tr>
-            <td>ID</td>
-            <td>Vorname</td>
-            <td>Nachname</td>
-          </tr>
-        </thead>
-        <tr>
-          <td>0</td>
-          <td>Florian</td>
-          <td>Rabiot</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Tobi</td>
-          <td>Wehle</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Igor</td>
-          <td>Aleksovski</td>
-        </tr>
-      </table>
-    </ul>
+    <div id="clock">15:00:00</div>
+    <main>
+      <div class="link-container">
+        <h3>IT-News</h3>
+        <ul class="list">
+          <li><a href="https://www.ccc.de/en">CCC.de</a></li>
+          <li><a href="https://www.heise.de">Heise Online</a></li>
+          <li>
+            <a href="https://www.golem.de/specials/it-sicherheit/"
+              >Golem IT-Security</a
+            >
+          </li>
+          <li><a href="https://www.linuxjournal.com">Linux Journal</a></li>
+          <li>
+            <a href="https://opensource.com/tags/news">OpenSource.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="link-container">
+        <h3>Gaming</h3>
+        <ul class="list">
+          <li>
+            <a href="https://www.rockpapershotgun.com/">Rock Paper Shotgun</a>
+          </li>
+          <li><a href="https://de.ign.com/article/news">IGN-News</a></li>
+          <li><a href="https://www.gamestar.de/news/">Gamestar-News</a></li>
+          <li>
+            <a href="https://www.gamestar.de/releaseliste/"
+              >Gamestar-Releaseliste</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="link-container">
+        <h3>Social/Coding</h3>
+        <ul class="list">
+          <li><a href="https://www.reddit.com/">Reddit</a></li>
+          <li><a href="https://www.stackoverflow.com/">StackOverflow</a></li>
+          <li><a href="https://www.github.com/">Github</a></li>
+          <li><a href="https://www.udemy.com/">Udemy</a></li>
+          <li><a href="https://www.fsf.org/">FSF</a></li>
+        </ul>
+      </div>
+      <div class="link-container">
+        <h3>Kaffeepause</h3>
+        <ul class="list">
+          <li><a href="https://www.youtube.com/">Youtube</a></li>
+          <li><a href="https://www.twitch.tv/">Twitch TV</a></li>
+          <li><a href="https://www.primevideo.com/">Prime Video</a></li>
+          <li>
+            <a
+              href="https://www.freepik.com/search?format=search&query=background&selection=1&type=vector"
+              >Wallpaper</a
+            >
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div class="joke-container">
+      <p id="joke">Chuck Norris's first program was kill -9.</p>
+    </div>
   </body>
 </html>
